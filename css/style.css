@@ -1,0 +1,180 @@
+:root{
+--primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --font-family-1: 'CustomFont1', arial;
+  --font-family-2: 'CustomFont2', serif;
+}
+
+.header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.header .logo {
+    font-family: var(--font-family-2);
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    color: whitesmoke;
+    transition: all 0.5s ease-in;
+}
+  
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 20px;
+    gap: 50px;
+}
+  
+nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: all 0.5s ease-in;
+}
+  
+nav ul li a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+.logo:hover{
+  color: var(--secondary-color);
+  text-decoration:underline;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+  }
+  
+.banner img {
+    width: 100%;
+    height: auto;
+  }
+  
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  /* Card Section */
+  .card-section{
+    display: inline-flex;
+    top: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    height: 100%;
+}
+
+.card {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 25px;
+    width: calc(33.33% - 40px);
+}
+
+.card img{
+  width: 100%;
+  height: 200px;
+}
+
+.btn{
+  background-color: #fc036b;
+  border: 2px solid black;
+  border-radius: 30px;
+  color: whitesmoke;
+  cursor: pointer;
+  align-items: center;
+  transition: all 0.3s ease-in;
+}
+
+.btn:hover{
+  box-shadow: -1px 1px 63px 9px rgba(252,3,107,0.79);
+  color: var(--primary-color);
+   font-family: var(--font-family-1);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  
+}
+  
+  /* Form Section */
+  .form{
+    padding: 20px;
+    background-color:aliceblue;
+    text-align: center;
+  }
+  
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .form h1{
+   text-align: center;
+   font-size: 25px;
+    font-weight: bolder;
+  }
+
+  form input, form textarea {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  
+  form button {
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+  }
+  
+  form button:hover {
+    background-color: var(--secondary-color);
+  }
+
+     /* footer section */
+  .footer {
+    height: auto;
+    background-color: #807c7c;
+    color: whitesmoke;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .footer p{
+     color: whitesmoke;
+     font-size: 18px;
+}
+
+  .social-icons {
+    padding: 10px;
+  }
+  
+  .social-icon {
+    color: white;
+    margin: 0 10px;
+    font-size: 25px;
+    text-decoration: none;
+  }
+  
+  .social-icon:hover {
+    color: var(--primary-color);
+  }
