@@ -4,13 +4,18 @@
   --font-family-1: 'CustomFont1', arial;
   --font-family-2: 'CustomFont2', serif;
 }
-
+    
+        /* header-section */
 .header {
     background-color: var(--primary-color);
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position:sticky;
+    top: 0;
+    z-index: 100;
+    
 }
   
 .header .logo {
@@ -31,6 +36,11 @@ nav ul {
     gap: 50px;
 }
   
+nav ul .btn{
+  font-size: 20px;
+
+}
+
 nav ul li a {
     color: whitesmoke;
     text-decoration: none;
@@ -46,44 +56,53 @@ nav ul li a:hover {
   text-decoration:underline;
 }
 
+      /* banner-section */
 .banner {
     position: relative;
     text-align: center;
   }
   
 .banner img {
-    width: 100%;
-    height: auto;
+    width: 85%;
+    height: 100vh;
   }
   
-.banner-text {
+  .banner-text {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
   }
-  
-  /* Card Section */
-  .card-section{
-    display: inline-flex;
-    top: 0;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-    height: 100%;
+.banner-text h1{
+  font-size: 40px;
+  font-weight: bold;
+  color: whitesmoke;
 }
 
+  /* Card Section */
+  .banner .card-section{
+    display: inline-flex;
+    top: 0;
+    position: absolute;
+    padding: 20px;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
 .card {
-    background-color: white;
+    background-color: wheat;
     border: 2px solid black;
     border-radius: 10px;
     margin: 10px;
     padding: 25px;
-    width: calc(33.33% - 40px);
+    width: calc(33.333% - 40px);
 }
 
-.card img{
+.banner .card img{
   width: 100%;
   height: 200px;
 }
@@ -96,6 +115,7 @@ nav ul li a:hover {
   cursor: pointer;
   align-items: center;
   transition: all 0.3s ease-in;
+  font-size: 15px;
 }
 
 .btn:hover{
@@ -157,6 +177,7 @@ form {
     color: whitesmoke;
     padding: 15px;
     text-align: center;
+    z-index: 125;
   }
 
   .footer p{
@@ -171,7 +192,7 @@ form {
   .social-icon {
     color: white;
     margin: 0 10px;
-    font-size: 25px;
+    font-size: 30px;
     text-decoration: none;
   }
   

@@ -12,3 +12,7 @@
     font-style: normal;
   }
   
+  .banner-text .oswald{
+    color: var(--secondary-color);
+    font-size: 30px;
+  }
